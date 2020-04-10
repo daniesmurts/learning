@@ -14,6 +14,12 @@ const HomeScreen = ({navigation}) => {
   onPress={()=> navigation.navigate('List')} title="Lists" />
   <Button 
   onPress={()=> navigation.navigate('Image')} title="Images" />
+  <Button 
+  onPress={()=> navigation.navigate('Counter')} title="Counter" />
+  <Button 
+  onPress={()=> navigation.navigate('Color')} title="Color Screen" />
+  <Button 
+  onPress={()=> navigation.navigate('Sqaure')} title="Sqaure" />
   </View>
   
   );
@@ -21,7 +27,10 @@ const HomeScreen = ({navigation}) => {
 
 const styles = StyleSheet.create({
   text: {
-    fontSize: 30
+    fontSize: 30,
+    textAlign: 'center',
+    marginBottom: 20,
+    marginTop: 20
   }
 });
 
